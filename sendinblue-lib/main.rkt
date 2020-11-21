@@ -7,8 +7,11 @@
          racket/function
          racket/string)
 
-(provide sendinblue-send-email
-         (struct-out sendinblue))
+(provide (struct-out sendinblue)
+         sendinblue-send-email
+         sendinblue-host
+         sendinblue-port
+         sendinblue-ssl?) 
 
 (define-logger sendinblue)
 

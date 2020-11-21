@@ -1,6 +1,6 @@
 #lang scribble/manual
 
-@(require (for-label json racket postmark))
+@(require (for-label json racket sendinblue))
 
 @title{Sendinblue API Client}
 @author[(author+email "Sorin Muntean" "hello@sorinmuntean.ro")]
