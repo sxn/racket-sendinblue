@@ -1,9 +1,8 @@
 #lang info
 
-(define collection 'multi)
+(define version "0.1.0")
+(define collection "sendinblue")
+(define scribblings '(("sendinblue.scrbl")))
 
-(define deps '("sendinblue-doc"
-               "sendinblue-lib"))
-
-(define implies '("sendinblue-doc"
-                  "sendinblue-lib"))
+(define deps '("base"))
+(define build-deps '("scribble-lib"))

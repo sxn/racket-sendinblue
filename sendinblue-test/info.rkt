@@ -2,10 +2,8 @@
 
 (define collection "tests")
 
-(define deps '())
-(define build-deps '("base"
-                     "rackunit-lib"
-                     "sendinblue-lib"
+(define deps '("base" "sendinblue"))
+(define build-deps '("rackunit-lib"
                      "web-server-lib"))
 
-(define update-implies '("sendinblue-lib"))
+(define update-implies '("sendinblue"))
