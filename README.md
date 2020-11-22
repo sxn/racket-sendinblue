@@ -1,6 +1,6 @@
 # racket-sendinblue
 
-This library lets you send emails with [Sendinblue] from Racket.
+A Racket client for the [Sendinblue](https://www.sendinblue.com) transactional email API.
 
 ## License
 
