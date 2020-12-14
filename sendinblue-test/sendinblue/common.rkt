@@ -36,7 +36,7 @@
 
 (define (echo req)
   (response/json
-   #:json (hasheq 'requestData (bytes->jsexpr (request-post-data/raw req)))))
+   #:json (bytes->jsexpr (request-post-data/raw req))))
 
 (define-values (start _)
   (dispatch-rules

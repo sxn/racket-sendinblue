@@ -4,8 +4,7 @@
          net/head
          net/http-client
          racket/contract
-         racket/function
-         racket/string)
+         racket/function)
 
 (provide (struct-out sendinblue)
          sendinblue-send-email
