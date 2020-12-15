@@ -4,7 +4,8 @@
          net/head
          racket/contract
          racket/function
-         "./private/client.rkt")
+         "./private/client.rkt"
+         "./private/util.rkt")
 
 (provide (struct-out sendinblue)
          sendinblue-send-email
@@ -65,12 +66,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; private ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(define (remove-false-params params)
-  (for/fold ([params (hasheq)])
-            ([(name value) params]
-             #:when (and value (not (null? value))))
-    (hash-set params name value)))
-                                                          
 (define (contact-string->hash contact)
   (define email (car (extract-addresses contact 'address)))
   (define name (car (extract-addresses contact 'name)))

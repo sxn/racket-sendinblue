@@ -1,7 +1,6 @@
 #lang racket/base
 
-(require json
-         rackunit
+(require rackunit
          rackunit/text-ui
          sendinblue
          "common.rkt")

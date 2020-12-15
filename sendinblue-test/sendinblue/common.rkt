@@ -10,7 +10,6 @@
 (provide start-server
          stop-server)
 
-
 (define (response/json #:code [code 200]
                        #:status [status #"OK"]
                        #:json [json (hasheq)])
