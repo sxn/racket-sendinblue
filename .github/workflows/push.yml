@@ -1,0 +1,21 @@
+on: push
+name: CI
+jobs:
+  cicd:
+    name: Build & test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - uses: Bogdanp/setup-racket@v0.12
+        with:
+          architecture: x64
+          distribution: full
+          variant: CS
+          version: 7.8
+
+      - name: Install
+        run: raco pkg install --auto --batch sendinblue/ sendinblue-test/
+
+      - name: Test
+        run: raco test -j 4 sendinblue-test/
