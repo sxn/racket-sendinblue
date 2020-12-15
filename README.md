@@ -1,4 +1,8 @@
-![CI](https://github.com/sxn/racket-sendinblue/workflows/CI/badge.svg)
+<p>
+    <a target="_blank" rel="noopener noreferrer" href="https://github.com/sxn/racket-sendinblue/actions?query=workflow%3ACI">
+        <img src="https://github.com/sxn/racket-sendinblue/workflows/CI/badge.svg" alt="CI" style="max-width:100%;">
+    </a>
+</p>
 
 # racket-sendinblue
 
