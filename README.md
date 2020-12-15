@@ -1,3 +1,5 @@
+![CI](https://github.com/sxn/racket-sendinblue/workflows/CI/badge.svg)
+
 # racket-sendinblue
 
 A Racket client for the [Sendinblue](https://www.sendinblue.com) transactional email API.
