@@ -13,4 +13,6 @@
 @section[#:tag "intro"]{Introduction}
 
 This library lets you send emails with @link["https://www.sendinblue.com/"]{Sendinblue}
-from Racket.
+from Racket. To use it, you'll need to have a valid @link["https://account.sendinblue.com/advanced/api"]{API ke}.
+
+@;; Reference ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
